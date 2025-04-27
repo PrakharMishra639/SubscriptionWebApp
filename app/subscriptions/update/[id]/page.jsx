@@ -20,7 +20,7 @@ export default function UpdateSubscription() {
           const result = await response.json();
 
           if (result && result.data) {
-            const subscription = result.data[0];
+            const subscription = result.data;
             setTargetUrl(subscription.target_url);
             setEventTypes(subscription.event_types);
           }

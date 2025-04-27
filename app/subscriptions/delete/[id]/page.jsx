@@ -20,7 +20,7 @@ export default function DeleteSubscription() {
           const result = await response.json();
 
           if (result && result.data) {
-            setSubscription(result.data[0]);
+            setSubscription(result.data);
           }
         } catch (error) {
           console.error("Error fetching subscription:", error);

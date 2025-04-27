@@ -44,13 +44,13 @@ export default function SubscriptionList() {
               <td className="border px-4 py-2">{sub.event_types.join(", ")}</td>
               <td className="border px-4 py-2">
                 <Link
-                  href={`/subscriptions/update?id=${sub.id}`}
+                  href={`/subscriptions/update/${sub.id}`}
                   className="text-green-600 mr-4"
                 >
                   Update
                 </Link>
                 <Link
-                  href={`/subscriptions/delete?id=${sub.id}`}
+                  href={`/subscriptions/delete/${sub.id}`}
                   className="text-red-500"
                 >
                   Delete
